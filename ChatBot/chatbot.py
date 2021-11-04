@@ -14,3 +14,22 @@ while x <= str_num:
 print("" + str(x) + "!")
 x += 1
 print("Completed, have a nice day!")
+
+
+print("Let's test your programming knowledge.")
+print("What is first letter in the word METHOD?")
+print(""" 
+1.D 
+2.E 
+3.M 
+4.T 
+""")
+def answers(new_answer):
+answer = int(input())
+if answer == 3
+print("Congratulations, have a nice day!")
+else:
+print("Please, try again.")
+answers("1")
+answers("2")
+answers("4")
