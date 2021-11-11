@@ -13,3 +13,15 @@ else:
     print("You lost!")
 
 
+word_list = ['python', 'java', 'javascript', 'php']
+
+import random
+
+secret = random.choice(word_list)
+str_word = str(input())
+guesse = input("Guess the word:" + str_word)
+if guesse in secret:
+    print("You survived!")
+else:
+    if guesse not in secret:
+        print("You lost!")
