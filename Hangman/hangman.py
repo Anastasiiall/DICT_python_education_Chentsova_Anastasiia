@@ -12,14 +12,14 @@ else:
     print("You lost!")
 
 
-# word_list = ['python', 'java', 'javascript', 'php']
-# secrets = random.choice(word_list)
-# x = input("Guess the word:")
-# print(x)
-# if x in secrets:
-#     print("You survived!")
-# else:
-#     print("You lost!")
+word_list = ['python', 'java', 'javascript', 'php']
+secrets = random.choice(word_list)
+x = input("Guess the word:")
+print(x)
+if x in secrets:
+    print("You survived!")
+else:
+    print("You lost!")
 
 
 
