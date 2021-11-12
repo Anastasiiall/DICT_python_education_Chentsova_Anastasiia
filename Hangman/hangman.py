@@ -2,14 +2,24 @@ import random
 print("HANGMAN")
 print("The game will be available soon.")
 
-word_list = ['python', 'java', 'javascript', 'php']
-secrets = random.choice(word_list)
+
+word = ["python"]
 x = input("Guess the word:")
 print(x)
-if x in secrets:
+if x in word:
     print("You survived!")
 else:
     print("You lost!")
+
+
+# word_list = ['python', 'java', 'javascript', 'php']
+# secrets = random.choice(word_list)
+# x = input("Guess the word:")
+# print(x)
+# if x in secrets:
+#     print("You survived!")
+# else:
+#     print("You lost!")
 
 
 
