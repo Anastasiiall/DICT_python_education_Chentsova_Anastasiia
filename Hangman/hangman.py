@@ -6,35 +6,35 @@ def start_game():
     t = 0
     word_list = ['python', 'java', 'javascript', 'php']
     secrets = (random.choice(word_list))
-    word = '_' * len(secrets)
+    line = '_' * len(secrets)
+    word = input("" + line + "\nInput a letter:")
     while t <= 7:
-        a = input("" + word + "\nInput a letter:")
-        if a in secrets:
+        if word in secrets:
             print("That letter appear in the word")
-            v = ''
+            n = ''
             for i in range(len(secrets)):
-                if a == secrets[i]:
-                    v += a
+                if word == secrets[i]:
+                    n += word
                 else:
-                    v += word[i]
-                if v == secrets:
+                    n += line[i]
+                if n == secrets:
                     print("Your word is", secrets, "\nYou win!\nThanks for playing!")
                     quit()
-                if a in word[i]:
+                if word in line[i]:
                     print("You have already entered this letter")
                     t -= 1
-            word = v
+            line = n
         else:
             print("That letter doesn't appear in the word" + "\nNumber of mistakes:" + str(t) + " out of 7")
         t += 1
-        y = a
-        if y.isalpha():
+        z = word
+        if z.isalpha():
             print()
         else:
             print("Please enter a lowercase English letter")
             t -= 1
-        k = len(a)
-        if k == 1:
+        o = len(word)
+        if o == 1:
             print()
         else:
             print("You should input a single letter")
@@ -45,12 +45,13 @@ def start_game():
 
 
 def game_1():
-    n = input('Type "play" to play the game, "exit" to quit:')
-    if n == "play":
+    k = input('Type "play" to play the game, "exit" to quit:')
+    if k == "play":
         start_game()
-    elif n == "exit":
+    elif k == "exit":
         return game_1()
     else:
         return game_1()
+
 
 game_1()
