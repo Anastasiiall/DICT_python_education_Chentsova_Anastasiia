@@ -27,8 +27,8 @@ def start_game():
         else:
             print("That letter doesn't appear in the word" + "\nNumber of mistakes:" + str(t) + " out of 7")
         t += 1
-        z = word
-        if z.isalpha():
+        y = word
+        if y.isalpha():
             print()
         else:
             print("Please enter a lowercase English letter")
