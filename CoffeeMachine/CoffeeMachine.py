@@ -93,4 +93,3 @@ elif action == 'fill':
     coffee_fill(water, milk, coffee_beans, disposable_cups)
 else:
     coffee_money(money)
-
